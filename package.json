@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css",
+    "build:copy": "copyfiles -u 1 src/**/* dist/ -e src/input.css",
+    "build": "npm run build:css && npm run build:copy",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css --watch"
   },
   "author": "",
@@ -12,5 +14,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.14",
     "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
   }
 }
