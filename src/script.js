@@ -37,3 +37,10 @@ window.addEventListener("resize", adjustHeader);
 
 adjustHeader();
 });
+
+// Dark mode toggle
+const html = document.documentElement;
+
+function toggleTheme() {
+  const isDark = html.classList.toggle("dark");
+}

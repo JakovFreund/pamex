@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="hr">
+<html lang="hr" class="dark"> <!-- class="dark"-->
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +10,12 @@
     <script src="script.js"></script>
 </head>
 
-<body class="bg-pamex-lighter-gray text-pamex-darker-gray">
+<body class="bg-pamex-bg text-pamex-text">
     <!-- Built by Jakov Freund -->
 
     <!-- Navigacija -->
     <header id="mainHeader"
-        class="md:fixed top-0 left-0 right-0 bg-pamex shadow z-50 text-pamex-light-gray transition-all duration-300">
+        class="md:fixed top-0 left-0 right-0 bg-pamex-header shadow z-50 text-pamex-header-text transition-all duration-300">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
             <div class="flex items-center cursor-pointer transition-all duration-300 hover:text-white"
                 onclick="scrollToTop()">
@@ -34,8 +34,9 @@
     <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
         style="background-image: url('assets/hero.jpg');">
         <div
-            class="bg-black/50 px-10 py-5 rounded-xl text-center text-white max-w-md lg:max-w-3xl transition-all duration-300">
-            <p class="text-pamex-lighter font-bold pt-5 text-base lg:text-2xl">POUZDANE USLUGE ZA VAŠ DOM I PROSTOR</p>
+            class="bg-black/60 px-10 py-5 rounded-xl text-center text-white max-w-md lg:max-w-3xl transition-all duration-300">
+            <p class="text-pamex-hero-subtitle font-bold pt-5 text-base lg:text-2xl">POUZDANE USLUGE ZA VAŠ DOM I
+                PROSTOR</p>
             <h1 class="text-3xl font-bold mb-4 lg:text-6xl">Pamex, Obrt za Usluge</h1>
             <p class="text-lg">Pamex obrt nudi sigurne i povoljne usluge selidbe, rušenja, prijevoza i ugradnje
                 stolarije. Vaš partner za brze, uredne i odgovorne radove u Zagrebu i okolici.</p>
@@ -55,9 +56,10 @@
     <!-- O nama -->
     <section id="onama" class="py-20 px-4 text-center scroll-mt-20">
         <h2 class="text-3xl font-semibold mb-6">O nama</h2>
-        <img src="assets/logo_crni_tekst.png" class="h-96 mx-auto">
-        <p class="max-w-3xl mx-auto text-pamex-dark-gray leading-relaxed">
-            Obrt <b class="text-pamex">Pamex</b>, vl. Marko Brezovec, osnovan je 2023. godine u Dugom Selu.
+        <img src="assets/logo_crni_tekst.png" class="h-96 mx-auto dark:hidden" alt="Pamex logo">
+        <img src="assets/logo_bijeli_tekst_vizitka.png" class="h-96 mx-auto hidden dark:block" alt="Pamex logo (dark)">
+        <p class="max-w-3xl mx-auto text-pamex-about-text leading-relaxed">
+            Obrt <b class="text-pamex-bold-text">Pamex</b>, vl. Marko Brezovec, osnovan je 2023. godine u Dugom Selu.
             Specijalizirani smo za
             praktične
             usluge u građevinskom i transportnom sektoru — od selidbi i rušenja do ugradnje stolarije i popravaka
@@ -70,7 +72,7 @@
     </section>
 
     <!-- Usluge -->
-    <section id="usluge" class="bg-pamex-light-gray py-20 px-4 text-center scroll-mt-20">
+    <section id="usluge" class="bg-pamex-services-bg py-20 px-4 text-center scroll-mt-20">
         <h2 class="text-3xl font-semibold mb-10">Usluge</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl md:mx-auto mx-15">
             <div class="usluga">
@@ -110,7 +112,7 @@
     <!-- Kontakt -->
     <section id="kontakt" class="py-20 px-4 text-center flex flex-col items-center scroll-mt-20">
         <h2 class="text-3xl font-semibold mb-6">Kontakt</h2>
-        <p class="max-w-2xl mx-auto text-pamex-dark-gray mb-6">
+        <p class="max-w-2xl mx-auto text-pamex-about-text mb-6">
             Želite ponudu ili više informacija? Javite nam se putem telefona ili e-pošte.
         </p>
         <div class="text-xl">
@@ -120,7 +122,7 @@
             <p>🕒 Pon — Pet 8:00 — 16:00</p>
             <br />
         </div>
-        <p class="max-w-2xl mx-auto text-pamex-dark-gray mb-6">Poslujemo na području Zagreba, Dugog Sela i okolice.</p>
+        <p class="max-w-2xl mx-auto text-pamex-about-text mb-6">Poslujemo na području Zagreba, Dugog Sela i okolice.</p>
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47388.23755523248!2d16.0840625312445!3d45.81341123302815!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667ab09d9ced5d%3A0xd2da5d7145b3f4a7!2sSajmi%C5%A1na%20ul.%201A%2C%2010370%2C%20Dugo%20Selo!5e0!3m2!1shr!2shr!4v1759613019731!5m2!1shr!2shr"
@@ -129,15 +131,30 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-pamex-dark text-white text-center p-6">
+    <footer class="bg-pamex-footer-bg text-pamex-footer-text text-center p-6">
         <p>© 2025 Pamex - sva prava pridržana.</p>
     </footer>
 
     <!-- Gumb za povratak na vrh -->
     <button id="toTop" onclick="scrollToTop()"
-        class="hidden fixed bottom-6 right-6 bg-pamex-light text-white p-3 rounded-full shadow-lg hover:bg-pamex-lighter transition cursor-pointer">
+        class="hidden fixed bottom-6 right-6 bg-pamex-scroll-bg hover:bg-pamex-scroll-bg-hover text-pamex-scroll-text p-3 rounded-full shadow-lg transition cursor-pointer">
         <img src="assets/double-arrow-top-icon.svg" alt="Scroll to top" class="w-8 h-8">
     </button>
 
+
+    <button id="themeToggle" onclick="toggleTheme()"
+        class="fixed bottom-6 left-6 w-24 h-12 text-3xl bg-pamex-light-gray dark:bg-pamex-dark-gray border-2 border-black dark:border-white flex items-center rounded-full p-1 transition-colors duration-300">
+        <span id="toggleIcon"
+            class="absolute left-1 opacity-100 dark:opacity-0 transition-opacity duration-300">
+            ☀️
+        </span>
+        <span
+            class="absolute right-1 opacity-0 dark:opacity-100 transition-opacity duration-300">
+            🌙
+        </span>
+    </button>
+
+
 </body>
+
 </html>
