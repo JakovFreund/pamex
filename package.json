@@ -7,7 +7,9 @@
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css",
     "build:copy": "copyfiles -u 1 src/**/* dist/ -e src/input.css",
     "build": "npm run build:css && npm run build:copy",
-    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css --watch"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/style.css --watch",
+    "serve": "npx serve src",
+    "dev:serve": "concurrently \"npm run dev\" \"npm run serve\""
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "tailwindcss": "^4.1.14"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "copyfiles": "^2.4.1"
   }
 }

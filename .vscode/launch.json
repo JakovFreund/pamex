@@ -2,8 +2,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "command": "npm run dev",
-            "name": "Run tailwind",
+            "command": "npm run dev:serve",
+            "name": "Run tailwind + host server",
             "request": "launch",
             "type": "node-terminal"
         }
