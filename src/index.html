@@ -85,8 +85,14 @@
                 adaptacija i obnove objekata, a kod složenijih projekata surađujemo s
                 partnerima iz građevinske struke.</p>
         </div>
-        <div id="slider" class="relative w-full h-[70vh] overflow-hidden order-2 lg:order-1">
-            <!-- dynamically added images -->
+        <div class="relative w-full h-[70vh] overflow-hidden order-2 lg:order-1">
+            <div id="slider" class="absolute inset-0 w-full h-full">
+                <!-- dynamically added images -->
+            </div>
+            <img src="assets/broken-wall-light.png" alt="Razbijeni zid"
+                class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10 bg-black/0 dark:hidden">
+            <img src="assets/broken-wall-dark.png" alt="Razbijeni zid"
+                class="absolute inset-0 w-full h-full object-fill pointer-events-none z-10 bg-black/0 hidden dark:block">
         </div>
     </section>
 
@@ -158,13 +164,13 @@
 
     <!-- Gumb za povratak na vrh -->
     <button id="toTop" onclick="scrollToTop()"
-        class="hidden fixed bottom-6 right-6 bg-pamex-scroll hover:bg-pamex-scroll-hover text-pamex-scroll-text p-3 rounded-full shadow-lg transition cursor-pointer">
+        class="hidden fixed bottom-6 right-6 bg-pamex-scroll hover:bg-pamex-scroll-hover text-pamex-scroll-text p-3 rounded-full shadow-lg transition cursor-pointer z-30">
         <img src="assets/double-arrow-top-icon.svg" alt="Scroll to top" class="w-8 h-8">
     </button>
 
     <!-- Gumb za dark theme -->
     <button id="themeToggle" onclick="toggleTheme()"
-        class="fixed bottom-6 left-6 w-24 h-12 text-3xl bg-white dark:bg-gray-800 border-2 border-black dark:border-white flex items-center rounded-full p-1 transition-colors duration-300">
+        class="fixed bottom-6 left-6 w-24 h-12 text-3xl bg-white dark:bg-gray-800 border-2 border-black dark:border-white flex items-center rounded-full p-1 transition-colors duration-300 z-20">
         <span id="toggleIcon" class="absolute left-1 opacity-100 dark:opacity-0 transition-opacity duration-300">
             ☀️
         </span>
