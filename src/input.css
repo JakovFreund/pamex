@@ -4,6 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 
+#slider img {
+    @apply absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-2000;
+}
+
+#slider img.fadeIn {
+    @apply opacity-100;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {

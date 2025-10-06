@@ -54,22 +54,32 @@
 
 
     <!-- O nama -->
-    <section id="onama" class="py-20 px-4 text-center scroll-mt-20">
-        <h2 class="text-3xl font-semibold mb-6">O nama</h2>
-        <img src="assets/logo_crni_tekst.png" class="h-96 mx-auto dark:hidden" alt="Pamex logo">
-        <img src="assets/logo_bijeli_tekst_vizitka.png" class="h-96 mx-auto hidden dark:block" alt="Pamex logo (dark)">
-        <p class="max-w-3xl mx-auto text-pamex-about-text leading-relaxed">
-            Obrt <b class="text-pamex-bold-text">Pamex</b>, vl. Marko Brezovec, osnovan je 2023. godine u Dugom Selu.
-            Specijalizirani smo za
-            praktične
-            usluge u građevinskom i transportnom sektoru — od selidbi i rušenja do ugradnje stolarije i popravaka
-            namještaja. Naš cilj je pružiti kvalitetnu, pouzdanu i povoljnu uslugu svakom klijentu — bilo da trebate
-            manju pomoć pri
-            preseljenju, uklanjanje starog objekta ili završne radove nakon adaptacije.
-            Djelujemo profesionalno, po dogovoru i bez nepotrebnih komplikacija. Radimo na širenju poslovanja u smjeru
-            adaptacija i obnove objekata, a kod složenijih projekata surađujemo s
-            partnerima iz građevinske struke.</p>
+    <section id="onama" class="py-20 px-6 text-center scroll-mt-20 grid lg:grid-cols-2 gap-10 items-center">
+        <div class="order-1 lg:order-2">
+            <h2 class="text-3xl font-semibold mb-6">O nama</h2>
+            <img src="assets/logo_crni_tekst.png" class="h-96 mx-auto dark:hidden" alt="Pamex logo">
+            <img src="assets/logo_bijeli_tekst_vizitka.png" class="h-96 mx-auto hidden dark:block"
+                alt="Pamex logo (dark)">
+            <p class="max-w-3xl mx-auto text-pamex-about-text leading-relaxed">
+                Obrt <b class="text-pamex-bold-text">Pamex</b>, vl. Marko Brezovec, osnovan je 2023. godine u Dugom
+                Selu.
+                Specijalizirani smo za
+                praktične
+                usluge u građevinskom i transportnom sektoru — od selidbi i rušenja do ugradnje stolarije i popravaka
+                namještaja. Naš cilj je pružiti kvalitetnu, pouzdanu i povoljnu uslugu svakom klijentu — bilo da trebate
+                manju pomoć pri
+                preseljenju, uklanjanje starog objekta ili završne radove nakon adaptacije.
+                Djelujemo profesionalno, po dogovoru i bez nepotrebnih komplikacija. Radimo na širenju poslovanja u
+                smjeru
+                adaptacija i obnove objekata, a kod složenijih projekata surađujemo s
+                partnerima iz građevinske struke.</p>
+        </div>
+        <div id="slider" class="relative w-full h-[70vh] overflow-hidden">
+            <!-- dynamically added images -->
+        </div>
     </section>
+
+
 
     <!-- Usluge -->
     <section id="usluge" class="bg-pamex-services-bg py-20 px-4 text-center scroll-mt-20">
@@ -141,19 +151,15 @@
         <img src="assets/double-arrow-top-icon.svg" alt="Scroll to top" class="w-8 h-8">
     </button>
 
-
     <button id="themeToggle" onclick="toggleTheme()"
-        class="fixed bottom-6 left-6 w-24 h-12 text-3xl bg-pamex-light-gray dark:bg-pamex-dark-gray border-2 border-black dark:border-white flex items-center rounded-full p-1 transition-colors duration-300">
-        <span id="toggleIcon"
-            class="absolute left-1 opacity-100 dark:opacity-0 transition-opacity duration-300">
+        class="fixed bottom-6 left-6 w-24 h-12 text-3xl bg-white dark:bg-gray-800 border-2 border-black dark:border-white flex items-center rounded-full p-1 transition-colors duration-300">
+        <span id="toggleIcon" class="absolute left-1 opacity-100 dark:opacity-0 transition-opacity duration-300">
             ☀️
         </span>
-        <span
-            class="absolute right-1 opacity-0 dark:opacity-100 transition-opacity duration-300">
+        <span class="absolute right-1 opacity-0 dark:opacity-100 transition-opacity duration-300">
             🌙
         </span>
     </button>
-
 
 </body>
 
