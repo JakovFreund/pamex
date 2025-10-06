@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     
     
     const imageFolder = "assets/slideshow/";
-
     const slider = document.getElementById("slider");
 
     // dynamic add images to DOM
@@ -28,6 +27,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     setInterval(nextSlide, 10000);
+
+    // hamburger navigation
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("flex");
+
+        // animacija hamburger linija (pretvara se u X)
+        menuBtn.classList.toggle("open");
+        const spans = menuBtn.querySelectorAll("span");
+        if (menuBtn.classList.contains("open")) {
+            spans[0].classList.add("rotate-45", "translate-y-3");
+            spans[1].classList.add("opacity-0");
+            spans[2].classList.add("-rotate-45", "-translate-y-3");
+        } else {
+            spans[0].classList.remove("rotate-45", "translate-y-3");
+            spans[1].classList.remove("opacity-0");
+            spans[2].classList.remove("-rotate-45", "-translate-y-3");
+        }
+    });
 
 
     function adjustHeader() {

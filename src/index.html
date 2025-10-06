@@ -17,17 +17,28 @@
     <header id="mainHeader"
         class="md:fixed top-0 left-0 right-0 bg-pamex-header shadow z-50 text-pamex-header-text transition-all duration-300">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
-            <div class="flex items-center cursor-pointer transition-all duration-300 hover:text-white"
+            <div class="flex items-center cursor-pointer transition-all duration-300 hover:text-pamex-header-text-hover"
                 onclick="scrollToTop()">
                 <img src="assets/logo_krug.png" class="h-24 transition-all duration-300" id="logo">
                 <p class="text-4xl font-bold mx-5 transition-all duration-300" id="logoText">PAMEX</p>
             </div>
-            <nav class="space-x-6 text-xl font-medium">
-                <a href="#onama" class="hover:text-white">O NAMA</a>
-                <a href="#usluge" class="hover:text-white">USLUGE</a>
-                <a href="#kontakt" class="hover:text-white">KONTAKT</a>
+            <nav class="hidden md:flex space-x-6 text-xl font-medium">
+                <a href="#onama" class="hover:text-pamex-header-text-hover">O NAMA</a>
+                <a href="#usluge" class="hover:text-pamex-header-text-hover">USLUGE</a>
+                <a href="#kontakt" class="hover:text-pamex-header-text-hover">KONTAKT</a>
             </nav>
+            <button id="menuBtn" class="md:hidden flex flex-col justify-center space-y-2 cursor-pointer">
+                <span class="block w-10 h-1 bg-white transition-all duration-300"></span>
+                <span class="block w-10 h-1 bg-white transition-all duration-300"></span>
+                <span class="block w-10 h-1 bg-white transition-all duration-300"></span>
+            </button>
         </div>
+        <nav id="mobileMenu"
+            class="hidden flex-col items-center bg-pamex-subheader text-white space-y-4 py-6 text-2xl md:hidden transition-all duration-300">
+            <a href="#onama" class="hover:text-pamex-header-text-hover">O NAMA</a>
+            <a href="#usluge" class="hover:text-pamex-header-text-hover">USLUGE</a>
+            <a href="#kontakt" class="hover:text-pamex-header-text-hover">KONTAKT</a>
+        </nav>
     </header>
 
     <!-- Hero sekcija -->
@@ -82,7 +93,7 @@
 
 
     <!-- Usluge -->
-    <section id="usluge" class="bg-pamex-services-bg py-20 px-4 text-center scroll-mt-20">
+    <section id="usluge" class="bg-pamex-services py-20 px-4 text-center scroll-mt-20">
         <h2 class="text-3xl font-semibold mb-10">Usluge</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl md:mx-auto mx-15">
             <div class="usluga">
@@ -141,13 +152,13 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-pamex-footer-bg text-pamex-footer-text text-center p-6">
+    <footer class="bg-pamex-footer text-pamex-footer-text text-center p-6">
         <p>© 2025 Pamex - sva prava pridržana.</p>
     </footer>
 
     <!-- Gumb za povratak na vrh -->
     <button id="toTop" onclick="scrollToTop()"
-        class="hidden fixed bottom-6 right-6 bg-pamex-scroll-bg hover:bg-pamex-scroll-bg-hover text-pamex-scroll-text p-3 rounded-full shadow-lg transition cursor-pointer">
+        class="hidden fixed bottom-6 right-6 bg-pamex-scroll hover:bg-pamex-scroll-hover text-pamex-scroll-text p-3 rounded-full shadow-lg transition cursor-pointer">
         <img src="assets/double-arrow-top-icon.svg" alt="Scroll to top" class="w-8 h-8">
     </button>
 

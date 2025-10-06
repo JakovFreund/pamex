@@ -36,21 +36,23 @@ html {
     --color-pamex-text: var(--color-pamex-darker-gray);
 
     --color-pamex-header: var(--color-pamex);
-    --color-pamex-header-text: var(--color-pamex-light-gray);
+    --color-pamex-header-text: var(--color-pamex-lighter-gray);
+    --color-pamex-header-text-hover: var(--color-pamex-lighter);
+    --color-pamex-subheader: var(--color-pamex-dark);
 
     --color-pamex-hero-subtitle: var(--color-pamex-lighter);
 
     --color-pamex-about-text: var(--color-pamex-dark-gray);
     --color-pamex-bold-text: var(--color-pamex);
 
-    --color-pamex-services-bg: var(--color-pamex-light-gray);
-    --color-pamex-service-bg: var(--color-white);
+    --color-pamex-services: var(--color-pamex-light-gray);
+    --color-pamex-service: var(--color-white);
 
-    --color-pamex-footer-bg: var(--color-pamex-dark);
+    --color-pamex-footer: var(--color-pamex-dark);
     --color-pamex-footer-text: var(--color-white);
 
-    --color-pamex-scroll-bg: var(--color-pamex-light);
-    --color-pamex-scroll-bg-hover: var(--color-pamex-lighter);
+    --color-pamex-scroll: var(--color-pamex-light);
+    --color-pamex-scroll-hover: var(--color-pamex-lighter);
     --color-pamex-scroll-text: var(--color-white);
 }
 
@@ -62,17 +64,17 @@ html {
     --color-pamex-about-text: var(--color-pamex-light-gray);
     --color-pamex-bold-text: var(--color-pamex-lighter);
 
-    --color-pamex-services-bg: var(--color-pamex-dark-gray);
-    --color-pamex-service-bg: var(--color-pamex-darker-gray);
+    --color-pamex-services: var(--color-pamex-dark-gray);
+    --color-pamex-service: var(--color-pamex-darker-gray);
 
-    --color-pamex-footer-bg: var(--color-pamex-darker-gray);
+    --color-pamex-footer: var(--color-pamex-darker-gray);
   }
 }
 
 
 @layer components {
     .usluga {
-        @apply bg-pamex-service-bg p-6 rounded-2xl shadow hover:shadow-lg transition
+        @apply bg-pamex-service p-6 rounded-2xl shadow hover:shadow-lg transition
     }
     .usluga-naslov {
         @apply text-xl font-bold mb-2 text-pamex-bold-text
