@@ -4,6 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
+@layer base {
+  body {
+    font-family: Verdana, Geneva, sans-serif;
+  }
+}
+
 #slider img {
     @apply absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-2000;
 }

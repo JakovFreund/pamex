@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const images = ["architects-front-brick-wall.jpg", "building-construction-sunset.jpg", "friendly-inspector-talking-construction-workers-outdoors.jpg", "istockphoto-2117759132-612x612.jpg"]; // dodaj imena slika
+    const images = [
+        "architects-front-brick-wall.jpg", 
+        "building-construction-sunset.jpg", 
+        "friendly-inspector-talking-construction-workers-outdoors.jpg", 
+        "istockphoto-2117759132-612x612.jpg"]; // dodaj imena slika
+    
+    
     const imageFolder = "assets/slideshow/";
 
     const slider = document.getElementById("slider");
