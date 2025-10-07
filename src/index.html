@@ -42,10 +42,11 @@
     </header>
 
     <!-- Hero sekcija -->
-    <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
+    <section class="relative h-screen flex flex-col justify-center items-center bg-cover bg-center"
         style="background-image: url('assets/hero.jpg');">
+        <div class="absolute inset-0 bg-black/60"></div>
         <div
-            class="bg-black/60 px-10 py-5 rounded-xl text-center text-white max-w-md lg:max-w-3xl transition-all duration-300">
+            class="relative px-10 z-5 py-5 border-2 border-white text-center text-white max-w-md lg:max-w-3xl transition-all duration-300">
             <p class="text-pamex-hero-subtitle font-bold pt-5 text-xl">POUZDANE USLUGE ZA VAŠ DOM I
                 PROSTOR</p>
             <h1 class="text-5xl font-bold mb-4">Pamex, Obrt za Usluge</h1>
