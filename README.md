@@ -7,9 +7,9 @@ Responsive website for the company **Pamex**.
 - JavaScript
 
 ## 🌐 Live Website
-http://www.pamex-obrt.hr/
+https://www.pamex-obrt.hr/
 
-## Screenshots
+## 📸 Screenshots
 <details>
   <summary>🖥️ Desktop</summary>
 
@@ -23,8 +23,8 @@ http://www.pamex-obrt.hr/
 <details>
   <summary>📱 Mobile</summary>
 
-  ![p1](https://github.com/user-attachments/assets/0a77a9da-2a6e-45ea-9533-dfecd489aa90)
-  ![p2](https://github.com/user-attachments/assets/ec7bda80-7cb1-47cc-ab38-7522c87623d3)
-  ![p3](https://github.com/user-attachments/assets/150456f1-ad4e-4bc4-8160-a7a3fe2e4304)
+  <img src="https://github.com/user-attachments/assets/ec7bda80-7cb1-47cc-ab38-7522c87623d3" width="300">
+  <img src="https://github.com/user-attachments/assets/150456f1-ad4e-4bc4-8160-a7a3fe2e4304" width="300">
+  <img src="https://github.com/user-attachments/assets/0a77a9da-2a6e-45ea-9533-dfecd489aa90" width="300">
 </details>
 
