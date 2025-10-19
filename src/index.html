@@ -8,6 +8,19 @@
     <link href="./style.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="script.js"></script>
+    <style>
+        .hero-section {
+        background-image: url("assets/hero.png");
+        background-size: cover;
+        background-position: center;
+        }
+
+        @media (max-width: 768px) {
+        .hero-section {
+            background-image: url("assets/hero-mobile.png");
+        }
+        }
+    </style>
 </head>
 
 <body class="bg-pamex-bg text-pamex-text">
@@ -15,11 +28,11 @@
 
     <!-- Navigacija -->
     <header id="mainHeader"
-        class="md:fixed top-0 left-0 right-0 bg-pamex-header shadow z-50 text-pamex-header-text transition-all duration-300">
+        class="fixed top-0 left-0 right-0 bg-pamex-header shadow z-50 text-pamex-header-text transition-all duration-300">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-2">
             <div class="flex items-center cursor-pointer transition-all duration-300 hover:text-pamex-header-text-hover"
                 onclick="scrollToTop()">
-                <img src="assets/logo_krug.png" class="h-24 transition-all duration-300" id="logo">
+                <img src="assets/header_logo.png" class="h-24 transition-all duration-300" id="logo">
                 <p class="text-4xl font-bold mx-5 transition-all duration-300" id="logoText">PAMEX</p>
             </div>
             <nav class="hidden md:flex space-x-6 text-xl font-medium">
@@ -42,8 +55,7 @@
     </header>
 
     <!-- Hero sekcija -->
-    <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center"
-        style="background-image: url('assets/hero.jpg');">
+    <section class="hero-section h-screen flex flex-col justify-center items-center bg-cover bg-center">
         <div
             class="bg-black/60 px-10 py-5 rounded-xl text-center text-white max-w-md lg:max-w-3xl transition-all duration-300">
             <p class="text-pamex-hero-subtitle font-bold pt-5 text-xl">POUZDANE USLUGE ZA VAŠ DOM I
@@ -61,7 +73,6 @@
         </div>
     </section>
 
-
     <!-- O nama -->
     <section id="onama" class="py-20 px-6 text-center scroll-mt-20 grid lg:grid-cols-2 gap-10 items-center">
         <div class="order-1 lg:order-2 flex flex-col items-center">
@@ -70,8 +81,9 @@
             <img src="assets/logo_bijeli_tekst_vizitka.png" class="h-96 mx-auto hidden dark:block"
                 alt="Pamex logo (dark)">
             <p class="max-w-3xl text-2xl text-pamex-about-text leading-relaxed">
-                Mladi, ali iskusni tim. Naše snage su domaće razumijevanje projekata i svježe europske ideje za najbolje
-                rezultate.</p>
+                Mladi, ali iskusni tim koji spaja domaće znanje i razumijevanje projekata s modernim europskim pristupom
+                — za rezultate koji traju i oduševljavaju. Kompletne adaptacije stambenih i poslovnih prostora,
+                transport materijala i selidbe — brzo, sigurno i profesionalno.</p>
         </div>
         <div class="relative w-full h-[70vh] overflow-hidden order-2 lg:order-1">
             <div id="slider" class="absolute inset-0 w-full h-full">

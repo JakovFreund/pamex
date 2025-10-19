@@ -23,8 +23,6 @@
     --container-3xl: 48rem;
     --container-6xl: 72rem;
     --container-7xl: 80rem;
-    --text-lg: 1.125rem;
-    --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
